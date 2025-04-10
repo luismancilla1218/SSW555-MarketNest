@@ -44,3 +44,53 @@ body {
     border-width: 2px !important;
   }
   
+
+  /* Testimonials Section */
+#testimonials .card {
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#testimonials .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+#testimonials .card-text {
+  font-style: italic;
+  color: #444;
+}
+
+#testimonials .card-title {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+#testimonials .text-muted {
+  font-size: 0.9rem;
+  color: #888 !important;
+}
+
+/* Call to Action */
+#cta h2 {
+  font-size: 2rem;
+}
+#cta p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.95rem;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  #cta h2 {
+    font-size: 1.5rem;
+  }
+}
