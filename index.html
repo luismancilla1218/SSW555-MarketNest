@@ -1,200 +1,245 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MarketNest | Your Digital Growth Partner</title>
-    <!-- Stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"/>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MarketNest | Your Digital Growth Partner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="logo.png" alt="MarketNest Logo" width="30" height="30" class="d-inline-block align-text-top">
+        MarketNest
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ps-3">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="darkModeToggle">
+              <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Grow your brand. Expand your reach.</h1>
+      <p class="lead">
+        MarketNest helps small businesses and entrepreneurs build a powerful online presence that drives real results.
+        Our tailored digital marketing solutions make it easy to connect with your audience, increase visibility, and grow your business in today's competitive marketplace.
+      </p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Schedule Your Free Strategy Session</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-          <img src="logo.png" alt="MarketNest Logo" width="30" height="30" class="d-inline-block align-text-top">
-          MarketNest
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Social Media Management</h5>
+                <p class="card-text">We create and manage your content calendar across platforms like Instagram, Facebook, and LinkedIn. This includes post design, captions, and performance tracking. Our goal is to help your brand stay consistent and engaging online.</p>
+                <p class="text-primary fw-bold">$500/month</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Search Engine Optimization</h5>
+                <p class="card-text">Get found on Google. We optimize your website and content for relevant keywords, improve loading speeds, and make sure your pages follow best practices to increase visibility and traffic.</p>
+                <p class="text-primary fw-bold">$400/month</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Content Marketing</h5>
+                <p class="card-text">We develop blog posts, newsletters, and marketing content tailored to your audience. Content is key to trust and brand authority, and we make sure it’s consistent, well-written, and relevant to your market.</p>
+                <p class="text-primary fw-bold">$450/month</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Paid Advertising (Google & Meta)</h5>
+                <p class="card-text">We create targeted ad campaigns using platforms like Google Ads and Facebook/Instagram. Includes ad design, copywriting, targeting setup, A/B testing, and regular performance reports.</p>
+                <p class="text-primary fw-bold">$700/month</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Website Design & Development</h5>
+                <p class="card-text">We build clean, responsive websites designed to convert visitors into customers. Includes home, service, and contact pages, mobile optimization, and basic SEO setup.</p>
+                <p class="text-primary fw-bold">$1,200 one-time</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
 
-    <!-- Header -->
-    <header class="py-5 bg-light text-center">
-      <div class="container">
-        <h1 class="display-5 fw-bold">Grow Your Brand with MarketNest</h1>
-        <p class="lead">Smart Digital Marketing Solutions for Small Businesses</p>
-      </div>
-    </header>
-
-    <main>
-      <!-- Services Section -->
-      <section id="services" class="py-5 bg-light">
-        <div class="container">
-          <h2 class="text-center mb-4">Our Services</h2>
+        <!-- Bundled Packages -->
+        <div class="mt-5">
+          <h3 class="text-center mb-4">Bundled Packages</h3>
           <div class="row g-4">
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
+              <div class="card border-success h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Social Media Management</h5>
-                  <p class="card-text">We create and manage content across Instagram, Facebook, and LinkedIn to keep your brand consistent and engaging.</p>
-                  <p class="text-primary fw-bold">$500/month</p>
+                  <h5 class="card-title">Starter Package</h5>
+                  <p class="card-text">Includes Social Media Management + Search Engine Optimization (SEO)</p>
+                  <p class="card-text">Perfect for businesses launching their online presence.</p>
+                  <p class="text-success fw-bold">$800/month</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
+              <div class="card border-warning h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Search Engine Optimization</h5>
-                  <p class="card-text">Improve your visibility on Google with optimized content, fast-loading pages, and SEO best practices.</p>
-                  <p class="text-primary fw-bold">$400/month</p>
+                  <h5 class="card-title">Growth Package</h5>
+                  <p class="card-text">Includes Social Media, SEO, and Content Marketing</p>
+                  <p class="card-text">Ideal for businesses looking to scale with content and strategy.</p>
+                  <p class="text-warning fw-bold">$1,250/month</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
+              <div class="card border-danger h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Content Marketing</h5>
-                  <p class="card-text">Engage your audience with high-quality blogs, newsletters, and marketing content tailored to your brand.</p>
-                  <p class="text-primary fw-bold">$450/month</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">Paid Advertising (Google & Meta)</h5>
-                  <p class="card-text">Launch and optimize ad campaigns on Google Ads and Facebook/Instagram to generate leads and conversions.</p>
-                  <p class="text-primary fw-bold">$700/month</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">Website Design & Development</h5>
-                  <p class="card-text">Build responsive websites that convert. Includes homepage, service pages, contact form, mobile optimization, and SEO basics.</p>
-                  <p class="text-primary fw-bold">$1,200 one-time</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bundled Packages -->
-          <div class="mt-5">
-            <h3 class="text-center mb-4">Bundled Packages</h3>
-            <div class="row g-4">
-              <div class="col-md-4">
-                <div class="card border-success h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Starter Package</h5>
-                    <p class="card-text">Social Media Management + SEO</p>
-                    <p class="card-text">Perfect for launching your online presence.</p>
-                    <p class="text-success fw-bold">$800/month</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card border-warning h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Growth Package</h5>
-                    <p class="card-text">Social Media, SEO, and Content Marketing</p>
-                    <p class="card-text">Ideal for businesses ready to scale.</p>
-                    <p class="text-warning fw-bold">$1,250/month</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card border-danger h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Premium Package</h5>
-                    <p class="card-text">Everything: Social Media, SEO, Content, Ads, and Website</p>
-                    <p class="card-text">Best for serious growth — includes strategy calls and biannual website refresh.</p>
-                    <p class="text-danger fw-bold">$2,800/month</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="py-5 bg-white">
-        <div class="container">
-          <h2 class="text-center mb-5">What Our Clients Say</h2>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <p class="card-text">“MarketNest helped us grow our social media presence 10x. The content was always on point!”</p>
-                  <h5 class="card-title mt-3 mb-0">— Alex P.</h5>
-                  <p class="text-muted">Founder, StyleGrid</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <p class="card-text">“Their SEO package boosted our Google ranking in just a few weeks. Highly recommended!”</p>
-                  <h5 class="card-title mt-3 mb-0">— Maria R.</h5>
-                  <p class="text-muted">Marketing Manager, HealthNest</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <p class="card-text">“We loved the website they built for us. Fast, mobile-friendly, and professional.”</p>
-                  <h5 class="card-title mt-3 mb-0">— Jason T.</h5>
-                  <p class="text-muted">CEO, FinPulse</p>
+                  <h5 class="card-title">Premium Package</h5>
+                  <p class="card-text">Includes everything: Social Media, Search Engine Optimization (SEO), Content, PPC Ads, and Website Design</p>
+                  <p class="card-text">Best for businesses ready to go all-in. Includes ongoing strategy calls and a website refresh every 6 months.</p>
+                  <p class="text-danger fw-bold">$2,800/month</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Call to Action -->
-      <section id="cta" class="py-5 bg-primary text-white text-center">
-        <div class="container">
-          <h2>Ready to Take Your Business to the Next Level?</h2>
-          <p class="mb-4">Contact us today or subscribe for a consultation!</p>
-          <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
-        </div>
-      </section>
-
-      <!-- Contact Teaser -->
-      <section id="contact" class="py-5 bg-light text-center">
-        <div class="container">
-          <h3>Have Questions?</h3>
-          <p class="mb-4">Reach out and let’s chat about your business goals.</p>
-          <p>Email: contact@marketnest.com | Phone: (123) 456-7890</p>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="py-4 bg-dark text-white text-center">
-      <div class="container">
-        <p class="mb-0">&copy; 2025 MarketNest. All rights reserved.</p>
       </div>
-    </footer>
+    </section>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Clients Say</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <p class="card-text">“MarketNest helped us grow our social media presence 10x. The content was always on point!”</p>
+                <h5 class="card-title mt-3 mb-0">— Alex P.</h5>
+                <p class="text-muted">Founder, StyleGrid</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <p class="card-text">“Their SEO package boosted our Google ranking in just a few weeks. Highly recommended!”</p>
+                <h5 class="card-title mt-3 mb-0">— Maria R.</h5>
+                <p class="text-muted">Marketing Manager, HealthNest</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <p class="card-text">“We loved the website they built for us. Fast, mobile-friendly, and professional.”</p>
+                <h5 class="card-title mt-3 mb-0">— Jason T.</h5>
+                <p class="text-muted">CEO, FinPulse</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h5>Our Story</h5>
+            <p>Founded by digital marketers who believed in empowering small businesses with enterprise-level strategies.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Our Mission</h5>
+            <p>To provide simple, affordable, and effective marketing solutions tailored for small business success.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Meet the Team</h5>
+            <p>We're a close-knit team of designers, writers, and analysts based across the U.S., all committed to your growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-5 bg-primary text-white text-center">
+      <div class="container">
+        <h2>Ready to Take Your Business to the Next Level?</h2>
+        <p class="mb-4">Contact us today or subscribe for a consultation!</p>
+        <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light text-center">
+      <div class="container">
+        <h3>Have Questions?</h3>
+        <p class="mb-4">Reach out and let’s chat about your business goals.</p>
+        <p>Email: contact@marketnest.com | Phone: (123) 456-7890</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 MarketNest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const toggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      body.classList.add("dark-mode");
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener("change", () => {
+      body.classList.toggle("dark-mode");
+      localStorage.setItem("dark-mode", body.classList.contains("dark-mode") ? "enabled" : "disabled");
+    });
+  </script>
+</body>
 </html>

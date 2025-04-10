@@ -72,7 +72,24 @@ body {
   color: #888 !important;
 }
 
-/* Call to Action */
+/* About */
+#about h5 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* FAQ Accordion */
+.accordion-button {
+  font-weight: 600;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-body {
+  font-size: 0.95rem;
+}
+
+/* CTA */
 #cta h2 {
   font-size: 2rem;
 }
@@ -83,14 +100,71 @@ body {
 /* Footer */
 footer {
   font-size: 0.95rem;
+  background-color: #212529;
 }
 
-/* Responsive Fixes */
+/* Responsive tweaks */
 @media (max-width: 768px) {
   .navbar-brand {
     font-size: 1.2rem;
   }
+
   #cta h2 {
     font-size: 1.5rem;
   }
+
+  .card .fw-bold {
+    font-size: 1rem;
+  }
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .bg-white {
+  background-color: #1c1c1c !important;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode .card .text-primary,
+body.dark-mode .card .text-success,
+body.dark-mode .card .text-warning,
+body.dark-mode .card .text-danger {
+  color: #90caf9 !important;
+}
+
+body.dark-mode .accordion-button {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+body.dark-mode .accordion-button:not(.collapsed) {
+  background-color: #343434;
+}
+body.dark-mode .accordion-body {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .bg-primary {
+  background-color: #0d6efd !important;
+}
+
+body.dark-mode .btn-light {
+  background-color: #e0e0e0;
+  color: #121212;
+}
+
+body.dark-mode footer {
+  background-color: #000 !important;
 }
