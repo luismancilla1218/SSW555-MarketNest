@@ -1,10 +1,96 @@
+/*************************************************
+    Theme Styles
+*************************************************/
+/* Theme Colors */
+:root {
+  --darkest-blue: #0d1b2a;
+  --dark-blue: #1b263b; /* primary color */
+  --yellow: #fca311; /* secondary color */
+  --red: #8e2d2e; /* secondary color */
+  --lt-gray: #e0e1dd;
+  --black: #000;
+  --white: #fff; 
+}
+
+/******* Themed Buttons *******/
+/* Primary Button */
+.btn.btn-primary{
+  background-color:var(--yellow);
+  border:4px solid var(--yellow);
+  color:var(--black);
+  font-weight:700;
+}
+.btn.btn-primary:focus,
+.btn.btn-primary:hover,
+.btn.btn-primary:active{
+  background-color:transparent;
+  border-color:var(--yellow);
+  color:var(--yellow);
+}
+
+/* Light Button */
+.btn.btn-light{
+  background-color:var(--lt-gray);
+  border:4px solid var(--lt-gray);
+  color:var(--black);
+  font-weight:700;
+}
+.btn.btn-light:focus,
+.btn.btn-light:hover,
+.btn.btn-light:active{
+  background-color:transparent;
+  border-color:var(lt-gray);
+  color:var(--lt-gray);
+}
+
+
+/*************************************************/
 /* General page styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: "Poppins", sans-serif;
+    font-weight:300;
+    font-style:normal;
     line-height: 1.6;
     background-color: #f8f9fa;
   }
   
+  /* Header */
+  header#header-content{
+    background-color:var(--dark-blue);
+    background-image:linear-gradient(to bottom right,var(--darkest-blue), var(--dark-blue));
+    color:var(--white);
+    padding-top:6em;
+    padding-bottom:6em;
+  }
+  header#header-content h1{
+    font-size:2.6rem;
+  }
+  header#header-content .lead{
+    margin-bottom:2em;
+  }
+  @media(min-width:768px){
+    header#header-content{
+      border-radius: 0 0 0 150px;
+    }
+  }
+  @media(min-width:1024px){
+    header#header-content .header-wrapper{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    header#header-content h1{
+      width:30%;
+    }
+    header#header-content .header-text{
+      width:65%;
+      padding-left:4em;
+      border-left:.5px solid var(--lt-gray);
+      text-align:left;
+    }
+  }
+
   /* Section Titles */
   h2, h3 {
     font-weight: 700;
@@ -122,6 +208,11 @@ footer {
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
+}
+
+body.dark-mode .navbar .navbar-brand, 
+body.dark-mode .navbar .nav-link{
+  color:#fff;
 }
 
 body.dark-mode .bg-light {
