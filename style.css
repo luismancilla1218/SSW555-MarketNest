@@ -259,3 +259,37 @@ body.dark-mode .btn-light {
 body.dark-mode footer {
   background-color: #000 !important;
 }
+
+.story-header {
+  position: relative;
+  background-image: url('AboutUs_ourStory.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-top: 5px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.story-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.story-header h2 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
