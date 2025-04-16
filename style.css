@@ -5,15 +5,21 @@
 :root {
   --darkest-blue: #0d1b2a;
   --dark-blue: #1b263b; /* primary color */
+  --med-blue:#415a77; /* secondary blue color */
   --yellow: #fca311; /* secondary color */
   --red: #8e2d2e; /* secondary color */
-  --lt-gray: #e0e1dd;
+  --lt-gray: #e5e5e5;
+  --lighter-gray: #f8f9fa;
   --black: #000;
   --white: #fff; 
 }
 
 /******* Themed Buttons *******/
 /* Primary Button */
+.btn{
+  font-weight:700;
+  border-width:4px;
+}
 .btn.btn-primary{
   background-color:var(--yellow);
   border:4px solid var(--yellow);
@@ -39,22 +45,41 @@
 .btn.btn-light:hover,
 .btn.btn-light:active{
   background-color:transparent;
-  border-color:var(lt-gray);
+  border-color:var(--lt-gray);
   color:var(--lt-gray);
 }
 
-
+/* Dark Blue Button */
+.btn.btn-blue{
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
+  color:var(--white);
+}
+.btn.btn-blue:focus,
+.btn.btn-blue:hover,
+.btn.btn-blue:active{
+  background-color:transparent;
+  border-color:var(--dark-blue);
+  color:var(--dark-blue);
+}
 /*************************************************/
-/* General page styling */
+/*************************************************
+    General Styles
+*************************************************/
 body {
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: "Poppins", sans-serif;
     font-weight:300;
     font-style:normal;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-color:var(--lighter-gray);
   }
-  
+  main section{
+    padding:6em 0;
+  }
+/*************************************************
+    Landing Page Styles
+*************************************************/
   /* Header */
   header#header-content{
     background-color:var(--dark-blue);
@@ -68,6 +93,7 @@ body {
   }
   header#header-content .lead{
     margin-bottom:2em;
+    font-weight:200;
   }
   @media(min-width:768px){
     header#header-content{
@@ -96,21 +122,66 @@ body {
     font-weight: 700;
   }
   
-  /* Service Cards */
-  .card {
-    border-radius: 12px;
+  /* Service Section */
+  #services h2{
+    font-size:2.5em;
+    color:var(--darkest-blue);
+  }
+  #services .card {
+    border-radius: 30px 0 30px 0;
+    border:none;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1) !important;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color:rgba(255,255,255,0.3) !important;
   }
-  
-  .card:hover {
+  #services .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
   }
-  
-  /* Price Styling */
-  .card .fw-bold {
-    font-size: 1.1rem;
-    margin-top: 10px;
+  #services .card-body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  #services .card-body .card-title{
+    font-weight:700;
+    text-align:center;
+    margin:1em 0 1.5em;
+    color:var(--med-blue);
+  }
+  #services .card-body .card-text{
+    font-weight:200;
+  }
+  #services .card-body .text-primary{
+    color:var(--red) !important;
+    text-align:right;
+  }
+  @media (max-width:768px) and (min-width:992px) {
+    #services .card-body{
+      padding:1.5em;
+    }
+  }
+
+  /* Bundled Price Section */
+  #bundled-section{
+    margin-top:8em;
+  }
+  #bundled-section h3{
+    color: var(--darkest-blue);
+  }
+  #bundled-section .card{
+    border-radius:20px;
+    box-shadow:none !important;
+    border-left:3px solid var(--yellow);
+  }
+  #bundled-section .card-body .card-title{
+    color:var(--darkest-blue);
+  }
+  #bundled-section .price-text{
+    font-weight:700;
+    font-size:2em;
+    text-align:center;
+    line-height:1;
   }
   
   /* Section Padding */
