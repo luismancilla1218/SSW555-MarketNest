@@ -67,169 +67,170 @@
     General Styles
 *************************************************/
 body {
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-    font-family: "Poppins", sans-serif;
-    font-weight:300;
-    font-style:normal;
-    line-height: 1.6;
-    background-color:var(--lighter-gray);
-  }
-  main section{
-    padding:6em 0;
-  }
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  font-family: "Poppins", sans-serif;
+  font-weight:300;
+  font-style:normal;
+  line-height: 1.6;
+  background-color:var(--lighter-gray);
+}
+
+main section{
+  padding-top:6em;
+}
 /*************************************************
     Landing Page Styles
 *************************************************/
-  /* Header */
+/* Header */
+header#header-content{
+  background-color:var(--dark-blue);
+  background-image:linear-gradient(to bottom right,var(--darkest-blue), var(--dark-blue));
+  color:var(--white);
+  padding-top:6em;
+  padding-bottom:6em;
+}
+header#header-content h1{
+  font-size:2.6rem;
+}
+header#header-content .lead{
+  margin-bottom:2em;
+  font-weight:200;
+}
+@media(min-width:768px){
   header#header-content{
-    background-color:var(--dark-blue);
-    background-image:linear-gradient(to bottom right,var(--darkest-blue), var(--dark-blue));
-    color:var(--white);
-    padding-top:6em;
-    padding-bottom:6em;
+    border-radius: 0 0 0 150px;
+  }
+}
+@media(min-width:1024px){
+  header#header-content .header-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
   }
   header#header-content h1{
-    font-size:2.6rem;
+    width:30%;
   }
-  header#header-content .lead{
-    margin-bottom:2em;
-    font-weight:200;
+  header#header-content .header-text{
+    width:65%;
+    padding-left:4em;
+    border-left:.5px solid var(--lt-gray);
+    text-align:left;
   }
-  @media(min-width:768px){
-    header#header-content{
-      border-radius: 0 0 0 150px;
-    }
-  }
-  @media(min-width:1024px){
-    header#header-content .header-wrapper{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-    header#header-content h1{
-      width:30%;
-    }
-    header#header-content .header-text{
-      width:65%;
-      padding-left:4em;
-      border-left:.5px solid var(--lt-gray);
-      text-align:left;
-    }
-  }
-
-  /* Section Titles */
-  h2, h3 {
-    font-weight: 700;
-  }
-  
-  /* Service Section */
-  #services h2{
-    font-size:2.5em;
-    color:var(--darkest-blue);
-  }
-  #services .card {
-    border-radius: 30px 0 30px 0;
-    border:none;
-    box-shadow:0 5px 10px rgba(0,0,0,0.1) !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background-color:rgba(255,255,255,0.3) !important;
-  }
-  #services .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
-  }
-  #services .card-body{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-  }
-  #services .card-body .card-title{
-    font-weight:700;
-    text-align:center;
-    margin:1em 0 1.5em;
-    color:var(--med-blue);
-  }
-  #services .card-body .card-text{
-    font-weight:200;
-  }
-  #services .card-body .text-primary{
-    color:var(--red) !important;
-    text-align:right;
-  }
-  @media (max-width:768px) and (min-width:992px) {
-    #services .card-body{
-      padding:1.5em;
-    }
-  }
-
-  /* Bundled Price Section */
-  #bundled-section{
-    margin-top:8em;
-  }
-  #bundled-section h3{
-    color: var(--darkest-blue);
-  }
-  #bundled-section .card{
-    border-radius:20px;
-    box-shadow:none !important;
-    border-left:3px solid var(--yellow);
-  }
-  #bundled-section .card-body .card-title{
-    color:var(--darkest-blue);
-  }
-  #bundled-section .price-text{
-    font-weight:700;
-    font-size:2em;
-    text-align:center;
-    line-height:1;
-  }
-  
-  /* Section Padding */
-  section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  /* Bundled Package Cards */
-  .card.border-success {
-    border-width: 2px !important;
-  }
-  .card.border-warning {
-    border-width: 2px !important;
-  }
-  .card.border-danger {
-    border-width: 2px !important;
-  }
-  
-
-  /* Testimonials Section */
-#testimonials .card {
-  border-radius: 10px;
-  border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Section Titles */
+h2, h3 {
+  font-weight: 700;
+}
+
+/* Service Section */
+#services h2{
+  font-size:2.5em;
+  color:var(--darkest-blue);
+}
+#services .card {
+  border-radius: 30px 0 30px 0;
+  border:none;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color:rgba(255,255,255,0.3) !important;
+}
+#services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
+}
+#services .card-body{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding-bottom:2em;
+}
+#services .card-body .card-title{
+  font-weight:700;
+  text-align:center;
+  margin:1em 0 1.5em;
+  color:var(--med-blue);
+}
+#services .card-body .card-text{
+  font-weight:200;
+}
+#services .card-body .text-primary{
+  color:var(--red) !important;
+  text-align:right;
+}
+@media (max-width:768px) and (min-width:992px) {
+  #services .card-body{
+    padding:1.5em;
+  }
+}
+
+/* Bundled Price Section */
+#bundled-section{
+  margin-top:8em;
+  background-color:var(--white);
+  padding:6em 0;
+}
+#bundled-section h3{
+  color: var(--darkest-blue);
+}
+#bundled-section .cards-wrapper .col-md-4:nth-child(2) .card{
+  border:2px solid var(--yellow);
+}
+#bundled-section .card{
+  border-radius:20px;
+  border-left:3px solid var(--red);
+}
+#bundled-section .card-body{
+  justify-content:initial;
+}
+#bundled-section .card-body .card-title{
+  color:var(--darkest-blue);
+}
+#bundled-section .btn.btn-blue{
+  margin:2em 0;
+}
+#bundled-section .price-text{
+  font-weight:700;
+  font-size:2em;
+  text-align:center;
+  line-height:1;
+}
+
+/* Testimonials Section */
+#testimonials{
+  padding-bottom:6em;
+  background-color:var(--dark-blue);
+  color:var(--white);
+}
+#testimonials .card {
+  border-radius: 10px;
+  border: 1px dotted var(--lt-gray);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color:transparent;
+}
 #testimonials .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
-
 #testimonials .card-text {
   font-style: italic;
-  color: #444;
+  color: var(--white);
 }
-
 #testimonials .card-title {
   font-weight: 600;
   margin-top: 1rem;
+  color:var(--white);
 }
-
 #testimonials .text-muted {
   font-size: 0.9rem;
-  color: #888 !important;
+  color: #9E9E9E !important;
 }
 
 /* About */
+#about{
+  padding-bottom:6em;
+  background-color: var(--white);
+}
 #about h5 {
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -247,6 +248,9 @@ body {
 }
 
 /* CTA */
+#cta{
+  background-color:var(--red);
+}
 #cta h2 {
   font-size: 2rem;
 }
@@ -257,7 +261,7 @@ body {
 /* Footer */
 footer {
   font-size: 0.95rem;
-  background-color: #212529;
+  background-color: var(--darkest-blue);
 }
 
 /* Responsive tweaks */
