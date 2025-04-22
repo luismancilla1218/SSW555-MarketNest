@@ -133,11 +133,11 @@ h2, h3 {
   border:none;
   box-shadow:0 5px 10px rgba(0,0,0,0.1) !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-color:rgba(255,255,255,0.3) !important;
+  background-color:rgba(255,255,255,0.3);
 }
 #services .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 #services .card-body{
   display:flex;
@@ -236,6 +236,74 @@ h2, h3 {
   margin-bottom: 0.5rem;
 }
 
+#our-story{
+  background-color:var(--dark-blue) !important;
+  color:var(--white);
+}
+#our-story p{
+  font-weight:200;
+}
+.story-header {
+  position: relative;
+  background-image: url('images/AboutUs_ourStory.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-top: 5px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.story-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 1;
+  border-radius: 5px;
+}
+.story-header h2 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+#meet-team .card{
+  border-width:0 1px 1px 0;
+  box-shadow:none !important;
+  border-radius:10px;
+}
+#meet-team .card-title{
+  font-weight:800;
+  text-align:center;
+  color:var(--darkest-blue);
+}
+#meet-team .card-subtitle{
+  font-size:12px;
+  text-transform:uppercase;
+  text-align:center;
+}
+#meet-team .card-profile{
+  display:block;
+  width:100%;
+  max-width:110px;
+  border-radius:50%;
+  border:6px solid var(--med-blue);
+  margin:1em auto;
+}
+#meet-team .card-text{
+  text-align:center;
+  padding:1em 0;
+}
+
+
 /* FAQ Accordion */
 .accordion-button {
   font-weight: 600;
@@ -294,21 +362,47 @@ body.dark-mode .bg-light {
   background-color: #1f1f1f !important;
 }
 
-body.dark-mode .bg-white {
+body.dark-mode .bg-white,
+body.dark-mode #bundled-section,
+body.dark-mode #about{
   background-color: #1c1c1c !important;
 }
 
-body.dark-mode .card {
-  background-color: #2a2a2a;
+body.dark-mode #services h2,
+body.dark-mode #bundled-section h3,
+body.dark-mode #meet-team .card-title{
+  color:var(--white);
+}
+body.dark-mode #services .card-title{
+  color:var(--white);
+}
+
+body.dark-mode .card,
+body.dark-mode #services .card {
+  background-color: #2a2a2a ;
   color: #e0e0e0;
   border-color: #444;
 }
 
 body.dark-mode .card .text-primary,
+body.dark-mode #services .card .text-primary,
 body.dark-mode .card .text-success,
 body.dark-mode .card .text-warning,
 body.dark-mode .card .text-danger {
   color: #90caf9 !important;
+}
+
+body.dark-mode #bundled-section .btn.btn-blue{
+  background-color:var(--lighter-gray);
+  border-color:var(--lighter-gray);
+  color:var(--black);
+}
+body.dark-mode #bundled-section .btn.btn-blue:hover,
+body.dark-mode #bundled-section .btn.btn-blue:focus,
+body.dark-mode #bundled-section .btn.btn-blue:active{
+  background-color:transparent;
+  border-color:var(--lighter-gray);
+  color:var(--lighter-gray);
 }
 
 body.dark-mode .accordion-button {
@@ -335,36 +429,3 @@ body.dark-mode footer {
   background-color: #000 !important;
 }
 
-.story-header {
-  position: relative;
-  background-image: url('AboutUs_ourStory.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  margin-top: 5px;
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.story-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-  z-index: 1;
-  border-radius: 5px;
-}
-
-.story-header h2 {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  font-size: 60px;
-  font-weight: 900;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-}
