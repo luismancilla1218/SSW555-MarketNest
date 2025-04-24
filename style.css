@@ -176,7 +176,8 @@ h2, h3 {
 #bundled-section .cards-wrapper .col-md-4:nth-child(2) .card{
   border:2px solid var(--yellow);
 }
-#bundled-section .card{
+#bundled-section .card,
+#contact-section .card{
   border-radius:20px;
   border-left:3px solid var(--red);
 }
@@ -226,7 +227,9 @@ h2, h3 {
   color: #9E9E9E !important;
 }
 
-/* About */
+/*************************************************
+    About Page
+*************************************************/
 #about{
   padding-bottom:6em;
   background-color: var(--white);
@@ -303,8 +306,27 @@ h2, h3 {
   padding:1em 0;
 }
 
+/*************************************************
+    FAQ Page
+*************************************************/
+#faq-header,
+#services-header,
+#contact-header{
+  background-color:var(--dark-blue) !important;
+  color:var(--white) !important;
+}
+@media(min-width:768px){
+  #faq-header,
+  #services-header,
+  #contact-header{
+    border-end-start-radius:150px;
+  }
+}
 
-/* FAQ Accordion */
+#faq{
+  min-height:calc(100vh - 332px);
+}
+
 .accordion-button {
   font-weight: 600;
 }
@@ -313,6 +335,23 @@ h2, h3 {
 }
 .accordion-body {
   font-size: 0.95rem;
+}
+.accordion-button:not(.collapsed){
+  background-color:var(--red);
+  color:var(--white);
+}
+.accordion-button:not(.collapsed)::after{
+  color:var(--white);
+}
+
+/*************************************************
+    Contact Page
+*************************************************/
+#contact-section .card{
+  border-top:none;
+  border-right:none;
+  border-bottom:none;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
 /* CTA */
@@ -326,7 +365,9 @@ h2, h3 {
   font-size: 1.1rem;
 }
 
-/* Footer */
+/*************************************************
+    Footer Styles
+*************************************************/
 footer {
   font-size: 0.95rem;
   background-color: var(--darkest-blue);
@@ -347,7 +388,9 @@ footer {
   }
 }
 
-/* Dark Mode */
+/*************************************************
+    Dark Mode Styles
+*************************************************/
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
@@ -414,6 +457,7 @@ body.dark-mode .accordion-button:not(.collapsed) {
 }
 body.dark-mode .accordion-body {
   background-color: #1f1f1f;
+  color:var(--white);
 }
 
 body.dark-mode .bg-primary {
